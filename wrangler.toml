@@ -5,6 +5,7 @@ compatibility_date = "2024-12-05"
 [vars]
 METRICS_URL = "metrics.com/my-metrics"
 
+# since WorkerB is importing from Worker could we even automatically do this?
 [[subworkers]]
 name = "WORKER_B"
 class = "WorkerB"
