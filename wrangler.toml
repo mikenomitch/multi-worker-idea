@@ -1,7 +1,20 @@
 name = "multi-worker"
+
+# any files that define a worker either as default export
+# or as class exported that implements Worker interface
 workers = ["src/index.js", "src/workerC.js"]
 
 compatibility_date = "2024-12-05"
 
 [vars]
 METRICS_URL = "metrics.com/my-metrics"
+
+
+# If I deploy
+	# all workers get deployed as as project (multi-worker)
+	# and each worker gets deployed as a separate worker
+		# multi-worker/main
+		# multi-worker/workerC
+		# multi-worker/workerD
+	# (naming on main worker is kinda weird... hrm...)
+
